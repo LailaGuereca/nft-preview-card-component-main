@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --main-bg-very-dark-blue: hsl(217, 54%, 11%);
+    --card-bg-very-dark-blue: hsl(216, 50%, 16%);
+    --line-very-dark-blue: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --font-family: 'Outfit', sans-serif;
+    --font-weigth-300: 300;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+}
+
+/*General*/
+body {
+    background: var(--main-bg-very-dark-blue);
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--neutral-white);
+    bottom: 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--neutral-white);
+}
+
+/*Mobile: 375px
+Desktop: 1440px
+Font size (paragraph): 18px*/
+
+/*Card*/
+.card {
+    background: var(--card-bg-very-dark-blue);
+    border-radius: 15px;
+    width: 370px;
+}
+
+.card .card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.card .card-img:hover {
+    
+}
+
+.card .card-content,
+.card-prices,
+.card-profile {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card .card-content h1 {
+    color: var(--neutral-white);
+    font-size: 1.5em;
+    font-weight: var(--font-weight-600);
+    transition: 0.3s;
+}
+
+.card .card-content h1:hover {
+    color: var(--primary-cyan);
+}
+
+
+.card .card-content p {
+    color: var(--primary-soft-blue);
+    padding-right: 10px;
+    line-height: 1.7em;
+    font-weight: var(--font-weigth-300);
+}
+
+.card .card-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card .card-prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.card .card-prices .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--primary-cyan);
+}
+
+.card .card-prices .price span {
+    padding-left: 5px;
+    font-weight: var(--font-weight-400);
+}
+
+.card .card-prices .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card .card-prices .time span {
+    color: var(--primary-soft-blue);
+    padding-left: 5px;
+}
+
+hr {
+    display: block;
+    width: 87%;
+    border-color: var(--line-very-dark-blue);
+    background-color: var(--line-very-dark-blue);
+    height: 1px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.card .card-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.card .card-profile img {
+    width: 10%;
+    border: 1px solid var(--neutral-white);
+    border-radius: 50%;
+}
+
+.card .card-profile p {
+    color: var(--primary-soft-blue);
+    padding-left: 15px;
+    font-weight: var(--font-weigth-300s);
+}
+
+.card .card-profile p span {
+    color: var(--neutral-white);
+    transition: 0.3s;
+}
+
+.card .card-profile p span:hover {
+    color: var(--primary-cyan);
+}
